@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define MAX 20
 typedef struct{
-	char arr[MAX];
+	int arr[MAX];
 	int top;
 }Stack;
 int isFull(Stack *s){
@@ -18,7 +18,7 @@ int isEmpty(Stack *s){
 	}
 	else return 0;
 }
-void push(Stack *s, char item){
+void push(Stack *s, int item){
 	if(isFull(s)==1)return;
 	else{
 		s->arr[++(s->top)]=item;
