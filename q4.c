@@ -59,6 +59,9 @@ int main(){
 		for(int i=size; i>=0; i--) push(&s, pop(&t));
 	}
 	printf("Required array is:\n");
-	for(int i=n-k-1; i>1; i--)printf("%d ", pop(&s));
+	int temp = s.top;
+	for(int i=temp; i>=0; i--){
+		printf("%d ", pop(&s));
+	}
 	printf("\n");
 }
